@@ -42,10 +42,12 @@ function criarTagLI(tarefa){
     let btnEditar = document.createElement('button')
     btnEditar.classList.add('btnAcao')
     btnEditar.innerHTML= '<i class="fa fa-pencil"></i>'
+    btnEditar.setAttribute('onclick', 'editar('+ tarefa.id+')')
 
     let btnExcluir = document.createElement('button')
     btnExcluir.classList.add('btnAcao')
     btnExcluir.innerHTML= '<i class="fa fa-trash"></i>'
+    btnEditar.setAttribute('onclick', 'excluir('+ tarefa.id+')')
 
     div.appendChild(btnEditar)
     div.appendChild(btnExcluir)
@@ -54,5 +56,13 @@ function criarTagLI(tarefa){
     li.appendChild(div)
     return li
 
+
+}
+
+function excluir(idTarefa){
+
+}
+
+function editar(idTarefa){
 
 }

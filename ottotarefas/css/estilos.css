@@ -17,6 +17,11 @@ body{
     border-radius: 12px;
 }
 
+.conteudo h1{
+    color: white;
+    text-align: center;
+}
+
 .topo{
     display: flex;
     justify-content: space-between;

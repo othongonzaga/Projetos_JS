@@ -62,3 +62,18 @@ topo button:hover{
     justify-content: space-between;
     align-items: center;
 }
+
+.btnAcao{
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #2b2a2a;
+    color: white;
+}
+
+.btnAcao:hover{
+    background: #3c3a3a;
+}

@@ -36,6 +36,7 @@ function criarTagLI(tarefa){
     let li = document.createElement('li')
     let span = document.createElement('span')
     span.classList.add('textoTarefa')
+    span.innerHTML = tarefa.nome
 
     let div = document.createElement('div')
     let btnEditar = document.createElement('button')

@@ -78,6 +78,7 @@ topo button:hover{
     cursor: pointer;
     background: #2b2a2a;
     color: white;
+    outline: none;
 }
 
 .btnAcao:hover{

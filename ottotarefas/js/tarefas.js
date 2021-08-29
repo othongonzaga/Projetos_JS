@@ -71,4 +71,9 @@ function excluir(idTarefa){
 
 function editar(idTarefa){
 
+
+    let li = document.getElementById(''+ idTarefa+'')
+        if(li){
+            
+        }
 }

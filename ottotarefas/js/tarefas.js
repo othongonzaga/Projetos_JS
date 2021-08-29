@@ -1,6 +1,12 @@
 let inputNovaTarefa = document.querySelector('#inputNovaTarefa')
 let btnAddTarefa = document.querySelector('#btnAddTarefa')
 let listaTarefas = document.querySelector('#listaTarefas')
+let janelaEdicao = document.querySelector('#janelaEdicao')
+let janelaEdicaoFundo = document.querySelector('#janelaEdicaoFundo')
+let janelaEdicaoBtnFechar = document.querySelector('#janelaEdicaoBtnFechar')
+let btnAtualizarTarefa = document.querySelector('#btnAtualizarTarefa')
+let idTarefaEdicao = document.querySelector('#idTarefaEdicao')
+let inputTarefaNomeEdicao = document.querySelector('#inputTarefaNomeEdicao')
 
 inputNovaTarefa.addEventListener('keypress', (e) => {
     if(e.keyCode == 13){
@@ -20,6 +26,31 @@ btnAddTarefa.addEventListener('click', (e) => {
     }
 
     adicionarTarefa(tarefa)
+})
+
+btnAtualizarTarefa.addEventListener('click', (e) => {
+    e.preventDefault() //Se clicar no botão dentro do formulário ele vai submeter esses dados para dentro da mesma pagina, mas não quero que isso ocorra 
+
+    let idTarefa = idTarefaEdicao.innerHTML.replace('#', '')
+
+    let tarefa = {
+        nome:inputTarefaNomeEdicao.value,
+        id: idTarefa
+    }
+
+    let tarefaAtual = document.getElementById(''+idTarefa+'')
+    if(tarefaAtual){
+        let li = criarTagLI(tarefa)
+
+    listaTarefas.replaceChild(li, tarefaAtual)
+    alternarJanelaEdicao()
+    }else{
+        alert('Elemento HTML não encontrado')
+    }
+})
+
+janelaEdicaoBtnFechar.addEventListener('click', (e) => {
+    alternarJanelaEdicao()
 })
 
 function gerarId(){
@@ -65,6 +96,8 @@ function excluir(idTarefa){
         let li = document.getElementById(''+ idTarefa+'')
         if(li){
             listaTarefas.removeChild(li)
+        }else{
+            alert('Elemento HTML não encontrado')
         }
     }
 }
@@ -73,7 +106,17 @@ function editar(idTarefa){
 
 
     let li = document.getElementById(''+ idTarefa+'')
+        let li = document.getElementById(''+idTarefa+'')
         if(li){
-            
+            idTarefaEdicao.innerHTML = '#'+idTarefa
+            inputTarefaNomeEdicao.value = li.innerHTML
+            alternarJanelaEdicao()
+        }else{
+            alert('Elemento HTML não encontrado')
         }
+}
+
+function alternarJanelaEdicao(){
+    janelaEdicao.classList.toggle('abrir')
+    janelaEdicaoFundo.classList.toggle('abrir')
 }

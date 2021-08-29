@@ -60,7 +60,13 @@ function criarTagLI(tarefa){
 }
 
 function excluir(idTarefa){
-
+    let confirmacao = window.confirm('Tem certeza que deseja excluir?')
+    if(confirmacao){
+        let li = document.getElementById(''+ idTarefa+'')
+        if(li){
+            listaTarefas.removeChild(li)
+        }
+    }
 }
 
 function editar(idTarefa){

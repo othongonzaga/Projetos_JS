@@ -65,6 +65,7 @@ function adicionarTarefa(tarefa){
 
 function criarTagLI(tarefa){
     let li = document.createElement('li')
+    li.id = tarefa.id
     let span = document.createElement('span')
     span.classList.add('textoTarefa')
     span.innerHTML = tarefa.nome

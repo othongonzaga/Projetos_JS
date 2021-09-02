@@ -42,8 +42,8 @@ btnAtualizarTarefa.addEventListener('click', (e) => {
     if(tarefaAtual){
         let li = criarTagLI(tarefa)
 
-    listaTarefas.replaceChild(li, tarefaAtual)
-    alternarJanelaEdicao()
+        listaTarefas.replaceChild(li, tarefaAtual)
+        alternarJanelaEdicao()
     }else{
         alert('Elemento HTML não encontrado')
     }
@@ -79,7 +79,7 @@ function criarTagLI(tarefa){
     let btnExcluir = document.createElement('button')
     btnExcluir.classList.add('btnAcao')
     btnExcluir.innerHTML= '<i class="fa fa-trash"></i>'
-    btnEditar.setAttribute('onclick', 'excluir('+ tarefa.id+')')
+    btnExcluir.setAttribute('onclick', 'excluir('+ tarefa.id+')')
 
     div.appendChild(btnEditar)
     div.appendChild(btnExcluir)
@@ -87,7 +87,6 @@ function criarTagLI(tarefa){
     li.appendChild(span)
     li.appendChild(div)
     return li
-
 
 }
 

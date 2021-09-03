@@ -87,7 +87,6 @@ function criarTagLI(tarefa){
     li.appendChild(span)
     li.appendChild(div)
     return li
-
 }
 
 function excluir(idTarefa){
@@ -103,9 +102,6 @@ function excluir(idTarefa){
 }
 
 function editar(idTarefa){
-
-
-    let li = document.getElementById(''+ idTarefa+'')
         let li = document.getElementById(''+idTarefa+'')
         if(li){
             idTarefaEdicao.innerHTML = '#'+idTarefa

@@ -105,7 +105,7 @@ function editar(idTarefa){
         let li = document.getElementById(''+idTarefa+'')
         if(li){
             idTarefaEdicao.innerHTML = '#'+idTarefa
-            inputTarefaNomeEdicao.value = li.innerHTML
+            inputTarefaNomeEdicao.value = li.innerText
             alternarJanelaEdicao()
         }else{
             alert('Elemento HTML não encontrado')

@@ -45,7 +45,7 @@ btnAtualizarTarefa.addEventListener('click', (e) => {
         listaTarefas.replaceChild(li, tarefaAtual)
         alternarJanelaEdicao()
     }else{
-        alert('Elemento HTML não encontrado')
+        alert('Elemento HTML não encontrado!')
     }
 })
 
@@ -74,12 +74,12 @@ function criarTagLI(tarefa){
     let btnEditar = document.createElement('button')
     btnEditar.classList.add('btnAcao')
     btnEditar.innerHTML= '<i class="fa fa-pencil"></i>'
-    btnEditar.setAttribute('onclick', 'editar('+ tarefa.id+')')
+    btnEditar.setAttribute('onclick', 'editar('+tarefa.id+')')
 
     let btnExcluir = document.createElement('button')
     btnExcluir.classList.add('btnAcao')
     btnExcluir.innerHTML= '<i class="fa fa-trash"></i>'
-    btnExcluir.setAttribute('onclick', 'excluir('+ tarefa.id+')')
+    btnExcluir.setAttribute('onclick', 'excluir('+tarefa.id+')')
 
     div.appendChild(btnEditar)
     div.appendChild(btnExcluir)
@@ -92,7 +92,7 @@ function criarTagLI(tarefa){
 function excluir(idTarefa){
     let confirmacao = window.confirm('Tem certeza que deseja excluir?')
     if(confirmacao){
-        let li = document.getElementById(''+ idTarefa+'')
+        let li = document.getElementById(''+idTarefa+'')
         if(li){
             listaTarefas.removeChild(li)
         }else{

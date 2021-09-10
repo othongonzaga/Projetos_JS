@@ -17,7 +17,7 @@ function criarTweet(tweetTexto){
 
     const tweet ={
         nome: 'Douglas',
-        foto:'.assets/src/img/ProfilePic.png',
+        foto:'./assets/img/ProfilePic.png',
         usuario: '@douglasNunes',
         texto: tweetTexto,
         tempo: `${hora}:${minutos}`
@@ -33,9 +33,10 @@ function listarTemplateTweet(tweet){
     li.classList.add('conteudoPrincipal__tweet')
     let img = document.createElement('img')
     img.src = foto
-    img.classList.add('tweet__conteudo')
+    img.classList.add('tweet__fotoPerfil')
 
     let div = document.createElement('div')
+    div.classList.add('tweet__conteudo')
     let h2 = document.createElement('h2')
     h2.innerText = nome
 
@@ -52,4 +53,5 @@ function listarTemplateTweet(tweet){
     li.appendChild(div)
     feed.appendChild(li)
 
+    textarea.value = ''
 }

@@ -3,7 +3,7 @@ body{
   height: 100vh;
   font-family: 'Roboto Mono',monospace;
   min-height: 400px;
-  background-color: rgb(163, 33, 33);
+  background-color: rgb(121, 115, 115);
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@ img{
 }
 
 .butao{
-    background-image: linear-gradient(to right, rgb(32, 27, 26), rgb(148, 138, 138));
+    background-image: linear-gradient(to right, rgb(37, 35, 35), rgb(192, 192, 192));
     border: none;
     color: white;
     cursor: pointer;

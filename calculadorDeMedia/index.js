@@ -9,10 +9,3 @@ function calcular(){
     else
      alert("Reprovado!")
    }
-
-/*function converterParaFahrenheit() {
-  var celsius = inputCelsius.value;
-  var temperaturaEmFahrenheit = ( celsius * 1.8 ) + 32
-  
-  containerNoHtml.innerHTML += '<p class="hello-world">A temperatura convertida para fahrenheit é ' + temperaturaEmFahrenheit + 'F</p>'
-}*/

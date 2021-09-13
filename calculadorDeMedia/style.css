@@ -1,8 +1,6 @@
-body {
-  
-    width: 100vw;
+body{
+  width: 100vw;
   height: 100vh;
-  
   font-family: 'Roboto Mono',monospace;
   min-height: 400px;
   background-color: rgb(163, 33, 33);
@@ -10,39 +8,39 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
+.container{
   text-align: center;
   padding: 20px;
   height: 100vh;
 }
 
-.page-title {
+.page-title{
   color:#ffffff;
   margin: 0 0 5px;
 }
 
-.page-subtitle {
+.page-subtitle{
   color:#ffffff;
   margin-top: 5px;
 }
 
-.page-logo {
+.page-logo{
   width: 200px;
 }
 
-.alura-logo {
+.alura-logo{
   width: 40px;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.hello-world {
+.hello-world{
   text-align: center;
   color: #fff;
 }
 
-img {
+img{
   display: block;
   margin: 32px auto;
 }

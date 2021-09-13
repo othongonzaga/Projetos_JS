@@ -1,22 +1,14 @@
-var notaDoPrimeiroBimestre = 5
-var notaDoSegundoBimestre = 5
-var notaDoTerceiroBimestre = 5
-var notaDoQuartoBimetre = 5
-var notaMedia = 6.0;
+function calcular(){
+    let nota1 = parseFloat(document.getElementById("nota1").value);
+    let nota2 = parseFloat(document.getElementById("nota2").value);
 
-var notaFinal = ((notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimetre) / 4).toFixed(1);
+    let media = (nota1 + nota2)/2 ;
 
-var containerNoHtml = document.querySelector('.container')
-
-var inputCelsius= document.querySelector('input')
-
-if(notaFinal >= notaMedia) {
-  console.log('Aluno foi aprovado')
-} else {
-  console.log('Aluno foi reprovado')
-}
-
-console.log(notaFinal)
+    if(media >= 7)
+      alert("Parabens, aprovado! Media "+media);
+    else
+     alert("Reprovado!")
+   }
 
 /*function converterParaFahrenheit() {
   var celsius = inputCelsius.value;

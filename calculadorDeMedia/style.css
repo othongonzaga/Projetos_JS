@@ -44,3 +44,12 @@ img{
   display: block;
   margin: 32px auto;
 }
+
+.butao{
+    background-image: linear-gradient(to right, rgb(32, 27, 26), rgb(148, 138, 138));
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 2px;
+}

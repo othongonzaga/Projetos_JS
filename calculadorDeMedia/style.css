@@ -14,6 +14,14 @@ body{
   height: 100vh;
 }
 
+.primeiraNota{
+    color: white;
+}
+
+.segundaNota{
+    color: white;
+}
+
 .page-title{
   color:#ffffff;
   margin: 0 0 5px;

@@ -1,7 +1,7 @@
 body{
     font-family: "Roboto Mono", monospace;
     min-height: 600px;
-    background-image: url("https://conhecimentocientifico.r7.com/wp-content/uploads/2019/10/ponto-de-interrogacao-como-usar-dicas-e-exemplos-1024x512.png");
+    background-image: url("https://conhecimentocientifico.r7.com/wp-content/uploads/2019/10/ponto-de-interrogacao-como-usar-dicas-e-exemplos-1024x512.jpg");
     background-color: #000000;
     background-size: cover;
     background-position: center bottom;
@@ -15,7 +15,7 @@ body{
   }
   
   .page-title{
-    color: #ffffff;
+    color: #317ae9;
     margin: 0 0 5px;
   }
   

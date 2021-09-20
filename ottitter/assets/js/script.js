@@ -44,7 +44,8 @@ function listarTemplateTweet(tweet){
     span.innerText = `${usuario} ${tempo}`
 
     let p = document.createElement('p')
-    p.innerText = texto
+    let mudaHashtag = texto.replace(/(#[a-zA-Z0-9_]+\w+)/, '<span style="color:blue;"> $1 </span>')
+    p.innerHTML = mudaHashtag
 
     div.appendChild(h2)
     div.appendChild(span)

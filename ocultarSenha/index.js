@@ -12,3 +12,6 @@ const usuario = {
     email: 'othoncesar1@hotmail.com',
     senha: '12345'
 }
+
+usuario.senha = ocultarSenha(usuario.senha)
+console.log(usuario)

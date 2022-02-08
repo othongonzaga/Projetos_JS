@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
 })
 
 function validaNome(){
-    //const regex = ;
+    const regex = /^[A-Z][a-z]* [A-Z][a-z]*$/;
     if(regex.test(nome.value)){
         console.log(nome.value); 
     }else{
@@ -17,7 +17,7 @@ function validaNome(){
 }
 
 function validaCelular(){
-    //const regex = ;
+    const regex = /^\([0-9]{2}\) [0-9]{4}[-][0-9]{4}$/;
     if(regex.test(celular.value)){
         console.log(celular.value);
     }else{
@@ -26,7 +26,7 @@ function validaCelular(){
 }
 
 function validaCPF(){
-    //const regex = ;
+    const regex = /^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}/;
     if(regex.test(cpf.value)){
         console.log(cpf.value);
     }else{
@@ -35,7 +35,7 @@ function validaCPF(){
 }
 
 function validaEmail(){
-    //const regex = ;
+    const regex = /[a-zA-Z0-9_]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+/; //ou poderia usa o \w
     if(regex.test(email.value)){
         console.log(email.value);
     }else{
@@ -44,7 +44,7 @@ function validaEmail(){
 }
 
 function validaSenha(){
-    //const regex = ;
+    const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]){6,15}$/;
     if(regex.test(senha.value)){
         console.log(senha.value);
     }else{
@@ -89,6 +89,12 @@ function validaCodigo(){
 
 function validaFormulario(){
     try{
+        validaNome()
+        validaCelular()
+        validaCPF()
+        validaEmail()
+        validaSenha()
+        validaConfirmaSenha()
         alert("Dados cadastrados com sucesso!!");
     }catch(erro){
         mensagemErro.innerHTML = erro.message;

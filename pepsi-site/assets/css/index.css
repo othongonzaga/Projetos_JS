@@ -115,7 +115,7 @@ header ul li a:active{
 .thumb{
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 10px;
     display: flex;
     transform: translateX(-50%);
 }
@@ -156,4 +156,123 @@ header ul li a:active{
     filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
+}
+
+@media (max-width: 991px){
+    section{
+        padding: 40px;
+        padding-bottom: 140px;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+
+    header .logo{
+        position: relative;
+        max-width: 60px ;
+    }
+
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li a{
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    header ul li a:hover{
+        color: #ed0223;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/assets/img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .toggleMenu.active{
+        background: url(/assets/img/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content .textBox{
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .content .textBox h2{
+        font-size: 3em;
+    }
+
+    .content .textBox a{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .content .imgBox{
+        width: 100%;
+        display: flex;
+        padding-right: 0;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .content .imgBox img{
+        max-width: 150px;
+    }
+
+    .thumb li img{
+        max-width: 30px;
+    }
+
+    .sci{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
+        background: rgba(0,0,0,0.2);
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

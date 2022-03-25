@@ -21,7 +21,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,4 +63,70 @@ header ul li a.active{
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app:hover{
+    background: #2d88ff;
+    color: #fff;
+}
+
+.app ion-icon{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.contentBx{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentBx .text{
+    max-width: 730px;
+}
+
+.contentBx .text h2{
+    font-size: 6em;
+    color: #3b5998;
+}
+
+.contentBx .text p{
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.contentBx .text h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.btn{
+    background: #3b5998;
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #2d88ff;
+}
+
+.btn ion-icon{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.imgBx img{
+    margin-left: 50px;
+    max-width: 300px;
+    max-height: 540px;
+    margin-top: 5em;
 }

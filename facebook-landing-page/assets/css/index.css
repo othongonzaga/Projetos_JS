@@ -126,7 +126,56 @@ header ul li a.active{
 
 .imgBx img{
     margin-left: 50px;
+    margin-right: 100px;
     max-width: 300px;
     max-height: 540px;
     margin-top: 5em;
+    display: none;
+}
+
+.imgBx img.active{
+    display: block;
+}
+
+.dots{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dots .dot{
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    display: inline-flex;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots .dot.active{
+    background: #fff;
+}
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    font-size: 1.8em;
+    color: #3b5998;
+}
+
+.sci li a:hover{
+    color: #2d88ff;
 }

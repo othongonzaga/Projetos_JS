@@ -314,3 +314,45 @@ input{
 .home__info-img:hover{
     transform: var(--img-scale);
 }
+
+/* Sobre */
+.sobre__data{
+    text-align: center;
+}
+  
+.sobre__container{
+    row-gap: 2.5rem;
+}
+  
+.sobre__description{
+    margin-bottom: var(--mb-2);
+}
+  
+.sobre__img{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+  
+.sobre__img-overlay{
+    overflow: var(--img-hidden);
+}
+  
+.sobre__img-one{
+    width: 130px;
+}
+  
+.sobre__img-two{
+    width: 180px;
+}
+  
+.sobre__img-one, 
+.sobre__img-two{
+    transition: var(--img-transition);
+}
+  
+.sobre__img-one:hover, 
+.sobre__img-two:hover{
+    transform: var(--img-scale);
+}

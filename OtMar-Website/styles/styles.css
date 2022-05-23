@@ -356,3 +356,44 @@ input{
 .sobre__img-two:hover{
     transform: var(--img-scale);
 }
+
+/* Descobrir */
+.descobrir__card {
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+  }
+  
+  .descobrir__data {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+  
+  .descobrir__title, 
+  .descobrir__description {
+    color: var(--white-color);
+  }
+  
+  .descobrir__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+  }
+  
+  .descobrir__description {
+    display: block;
+    font-size: var(--smaller-font-size);
+  }
+  
+  .descobrir__img {
+    transition: var(--img-transition);
+  }
+  
+  .descobrir__img:hover {
+    transform: var(--img-scale);
+  }
+  
+  .swiper-container-3d .swiper-slide-shadow-left,
+  .swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }

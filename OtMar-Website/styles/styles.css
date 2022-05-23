@@ -477,3 +477,78 @@ input{
 .video__button-icon{
     font-size: 1.2rem;
 }
+
+/* Lugar */
+.lugar__card, .lugar__img{
+    height: 230px;
+}
+  
+.lugar__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+}
+  
+.lugar__card{
+    position: relative;
+    overflow: var(--img-hidden);
+}
+  
+.lugar__card:hover .lugar__img{
+    transform: var(--img-scale);
+}
+  
+.lugar__img{
+    transition: var(--img-transition);
+}
+  
+.lugar__content, .lugar__title{
+    color: var(--white-color);
+}
+  
+.lugar__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .75rem .75rem 1rem;
+}
+  
+.lugar__rating{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+  
+.lugar__rating-icon{
+    font-size: .75rem;
+    margin-right: var(--mb-0-25);
+}
+  
+.lugar__rating-number{
+    font-size: var(--small-font-size);
+}
+  
+.lugar__subtitle, .lugar__price{
+    display: block;
+}
+  
+.lugar__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+  
+.lugar__subtitle{
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1-25);
+}
+  
+.lugar__button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: .75rem 1rem;
+}  

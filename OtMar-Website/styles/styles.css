@@ -358,42 +358,97 @@ input{
 }
 
 /* Descobrir */
-.descobrir__card {
+.descobrir__card{
     position: relative;
     width: 200px;
     overflow: var(--img-hidden);
-  }
+}
   
-  .descobrir__data {
+.descobrir__data{
     position: absolute;
     bottom: 1.5rem;
     left: 1rem;
-  }
+}
   
-  .descobrir__title, 
-  .descobrir__description {
+.descobrir__title, 
+.descobrir__description{
     color: var(--white-color);
-  }
+}
   
-  .descobrir__title {
+.descobrir__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
-  }
+}
   
-  .descobrir__description {
+.descobrir__description{
     display: block;
     font-size: var(--smaller-font-size);
-  }
+}
   
-  .descobrir__img {
+.descobrir__img{
     transition: var(--img-transition);
-  }
+}
   
-  .descobrir__img:hover {
+.descobrir__img:hover{
     transform: var(--img-scale);
-  }
+}
   
-  .swiper-container-3d .swiper-slide-shadow-left,
-  .swiper-container-3d .swiper-slide-shadow-right {
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
     background-image: none;
-  }
+}
+
+  /* Experiêcia */
+.experiencia__container{
+    row-gap: 2.5rem;
+    justify-content: center;
+    justify-items: center;
+}
+  
+.experiencia__content{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-items: center;
+    padding: 0 2rem;
+}
+  
+.experiencia__number{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+}
+  
+.experiencia__description{
+    font-size: var(--small-font-size);
+}
+  
+.experiencia__img{
+    position: relative;
+    padding-bottom: 2rem;
+}
+  
+.experiencia__img-one, 
+.experiencia__img-two{
+    transition: var(--img-transition);
+}
+  
+.experiencia__img-one:hover, 
+.experiencia__img-two:hover{
+    transform: var(--img-scale);
+}
+  
+.experiencia__overlay{
+    overflow: var(--img-hidden);
+}
+  
+.experiencia__overlay:nth-child(1){
+    width: 263px;
+    margin-right: 2rem;
+}
+  
+.experiencia__overlay:nth-child(2){
+    width: 120px;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}

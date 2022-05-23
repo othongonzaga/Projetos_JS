@@ -1,8 +1,10 @@
 const navMenu = document.getElementById('nav-menu'), 
 navAlternancia = document.getElementById('nav-alternancia'), 
 navClose = document.getElementById('nav-close')
-
 const navLink = document.querySelectorAll('.nav__link')
+const videoFile = document.getElementById('video-file'),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon')
 
 if(navAlternancia){
     navAlternancia.addEventListener('click', () =>{
@@ -41,3 +43,27 @@ let swiper = new Swiper(".discover__container", {
         rotate: 0,
     },
 })
+
+function playPause(){ 
+    if (videoFile.paused){
+        videoFile.play()
+        // Mudando o ícone
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
+    }
+    else {
+        videoFile.pause(); 
+
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
+
+    }
+}
+videoButton.addEventListener('click', playPause)
+
+function finalVideo(){
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+// terminou, quando o vídeo termina
+videoFile.addEventListener('ended', finalVideo)

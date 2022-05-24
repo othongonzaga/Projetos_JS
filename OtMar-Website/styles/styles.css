@@ -585,3 +585,19 @@ input{
 .inscrever__input::placeholder{
     color: var(--text-color);
 }
+
+.patrocinadores__container{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-items: center;
+    row-gap: 3.5rem;
+}
+
+.patrocinadores__img{
+    width: 90px;
+    filter: invert(0.6);
+    transition: var(--img-transition);
+}
+
+.patrocinadores__content:hover .patrocinadores__img{
+    filter: invert(0.3);
+}  

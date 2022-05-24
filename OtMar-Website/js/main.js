@@ -92,3 +92,33 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+// ------Dark Mode-------
+
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'ri-sun-line'
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// Obtemos o tema atual que a interface possui validando a classe dark-theme
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-fill' : 'ri-sun-line'
+
+// Validamos se o usuário já escolheu um tópico
+if (selectedTheme) {
+  // Se a validação for cumprida, perguntamos qual foi o problema para saber se ativamos ou desativamos o dark mode
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'ri-moon-fill' ? 'add' : 'remove'](iconTheme)
+}
+
+// Ative/desative o tema manualmente com o botão
+themeButton.addEventListener('click', () => {
+    // Adicione ou remova o tema escuro / ícone
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})

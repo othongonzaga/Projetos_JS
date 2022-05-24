@@ -67,3 +67,10 @@ function finalVideo(){
 }
 // terminou, quando o vídeo termina
 videoFile.addEventListener('ended', finalVideo)
+
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // Quando a rolagem for maior que 200 de altura da janela de visualização, adiciona a classe show-scroll à tag a com a classe scroll-up
+    if(this.scrollY > 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)

@@ -667,4 +667,31 @@ input{
   
 .footer__terms-link:hover{
     color: var(--text-color);
-}  
+}
+
+/* Scroll Up */
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    padding: .5rem;
+    display: flex;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+  
+.scrollup:hover{
+    background-color: var(--first-color-alt);
+    opacity: 1;
+}
+  
+.scrollup__icon{
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+  
+.show-scroll{
+    bottom: 5rem;
+}

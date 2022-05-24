@@ -231,6 +231,22 @@ input{
     color: var(--title-color);
 }
 
+/* ActiveLink dentro do Nav */
+.active-link{
+    position: relative;
+    color: var(--title-color);
+}
+  
+.active-link::before{
+    content: '';
+    position: absolute;
+    background-color: var(--title-color);
+    width: 100%;
+    height: 2px;
+    bottom: -.75rem;
+    left: 0;
+}
+
 /* Home */
 .home__img{
     position: absolute;

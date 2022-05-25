@@ -218,7 +218,7 @@ input{
 }
 
 .show-menu{
-    right: 0;
+  right: 0;
 }
 
 .scroll-header{
@@ -227,7 +227,7 @@ input{
 }
   
 .scroll-header .nav__logo,
-.scroll-header .nav__toggle{
+.scroll-header .nav__alternancia{
     color: var(--title-color);
 }
 
@@ -376,7 +376,6 @@ input{
 /* Descobrir */
 .descobrir__card{
     position: relative;
-    width: 200px;
     overflow: var(--img-hidden);
 }
   
@@ -403,6 +402,7 @@ input{
   
 .descobrir__img{
     transition: var(--img-transition);
+    width: 200px;
 }
   
 .descobrir__img:hover{
@@ -411,7 +411,7 @@ input{
   
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right{
-    background-image: none;
+  background-image: none;
 }
 
   /* Experiêcia */
@@ -631,6 +631,10 @@ input{
 .footer__title, 
 .footer__subtitle{
     font-size: var(--h3-font-size);
+}
+
+.footer__data{
+  text-align: center;
 }
   
 .footer__title{

@@ -12,6 +12,7 @@ const sections = document.querySelectorAll('section[id]')
 if(navAlternancia){
     navAlternancia.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
+        console.log("clicou")
     })
 }
 
@@ -41,7 +42,7 @@ let swiper = new Swiper(".descobrir__container", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    spaceBetween: 32,
+    spaceBetween: -226,
     coverflowEffect: {
         rotate: 0,
     },

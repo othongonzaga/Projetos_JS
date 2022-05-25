@@ -1,10 +1,12 @@
 const navMenu = document.getElementById('nav-menu'), 
 navAlternancia = document.getElementById('nav-alternancia'), 
 navClose = document.getElementById('nav-close')
+
 const navLink = document.querySelectorAll('.nav__link')
 const videoFile = document.getElementById('video-file'),
       videoButton = document.getElementById('video-button'),
       videoIcon = document.getElementById('video-icon')
+
 const sections = document.querySelectorAll('section[id]')      
 
 if(navAlternancia){
@@ -33,7 +35,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-let swiper = new Swiper(".discover__container", {
+let swiper = new Swiper(".descobrir__container", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

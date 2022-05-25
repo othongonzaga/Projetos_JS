@@ -175,7 +175,7 @@ input{
     align-items: center;
 }
   
-.nav__logo, .nav__alternancia {
+.nav__logo, .nav__alternancia{
     color: var(--white-color);
 }
   

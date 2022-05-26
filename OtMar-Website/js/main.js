@@ -125,3 +125,33 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// -----------Scrooll Reveal Animado------------------
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    // reset: true,
+})
+
+sr.reveal(`.home__data, .home__social-link, .home__info,
+           .descobrir__container,
+           .experiencia__data, .experiencia__overlay,
+           .lugar__card,
+           .patrocinador__content,
+           .footer__data, .footer__rights`,{
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal(`.sobre__data, 
+           .video__description,
+           .inscrever__description`,{
+    origin: 'left',
+})
+
+sr.reveal(`.sobre__img-overlay, 
+           .video__content,
+           .inscrever__form`,{
+    origin: 'right',
+    interval: 100,
+})

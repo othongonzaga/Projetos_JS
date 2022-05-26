@@ -42,7 +42,7 @@ let swiper = new Swiper(".descobrir__container", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    spaceBetween: -226,
+    spaceBetween: -25,
     coverflowEffect: {
         rotate: 0,
     },

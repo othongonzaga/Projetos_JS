@@ -3,8 +3,8 @@
 :root{
     --header-height: 3rem;
   
-    /*Green dark 190*/
-    --hue-color: 190;
+    /*Green dark 190, Green Blue 200*/
+    --hue-color: 216;
   
     --first-color: hsl(var(--hue-color), 64%, 22%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
@@ -191,6 +191,20 @@ input{
 .nav__menu{
     position: relative;
 }
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      background-color: var(--body-color);
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+      padding: 3rem;
+      transition: .4s;
+    }
+  }
 
 .nav__list{
     display: flex;
@@ -763,4 +777,17 @@ body.dark-theme{
   
 .change-theme-name{
     font-size: var(--small-font-size);
+}
+
+/* Responsividade */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
 }

@@ -51,8 +51,8 @@
     --img-scale: scale(1.1);
 }
 
-@media screen and (min-width: 968px) {
-    :root {
+@media screen and (min-width: 968px){
+    :root{
       --biggest-font-size: 4rem;
       --h1-font-size: 2.25rem;
       --h2-font-size: 1.75rem;
@@ -61,7 +61,7 @@
       --small-font-size: .875rem;
       --smaller-font-size: .813rem;
     }
-  }
+}
 
 /* Geral*/
 *{
@@ -204,8 +204,8 @@ input{
     position: relative;
 }
 
-@media screen and (max-width: 767px) {
-    .nav__menu {
+@media screen and (max-width: 767px){
+    .nav__menu{
       position: fixed;
       background-color: var(--body-color);
       top: 0;
@@ -216,7 +216,7 @@ input{
       padding: 3rem;
       transition: .4s;
     }
-  }
+}
 
 .nav__list{
     display: flex;
@@ -792,240 +792,237 @@ body.dark-theme{
 }
 
 /* Responsividade */
-@media screen and (max-width: 340px) {
-    .place__container {
+@media screen and (max-width: 340px){
+    .lugar__container{
       grid-template-columns: max-content;
       justify-content: center;
     }
-    .experience__content {
+    .experiencia__content{
       padding: 0;
     }
-    .experience__overlay:nth-child(1) {
+    .experiencia__overlay:nth-child(1){
       width: 190px;
     }
-    .experience__overlay:nth-child(2) {
+    .experiencia__overlay:nth-child(2){
       width: 80px;
     }
-    .home__info {
+    .home__info{
       width: 190px;
       padding: 1rem;
     }
-    .experience__img,
-    .video__container {
+    .experiencia__img,
+    .video__container{
       padding: 0;
     }
-  }
+}
   
-  /* For medium devices */
-  @media screen and (min-width: 568px) {
-    .video__container {
+  @media screen and (min-width: 568px){
+    .video__container{
       display: grid;
       grid-template-columns: .6fr;
       justify-content: center;
     }
-    .place__container {
+    .lugar__container{
       grid-template-columns: repeat(3, max-content);
     }
-    .subscribe__form {
+    .inscrever__form{
       width: 470px;
       margin: 0 auto;
     }
-  }
+}
   
-  @media screen and (min-width: 768px) {
-    body {
+  @media screen and (min-width: 768px){
+    body{
       margin: 0;
     }
-    .nav {
+    .nav{
       height: calc(var(--header-height) + 1.5rem);
     }
-    .nav__link {
+    .nav__link{
       color: var(--white-color);
       text-transform: initial;
     }
-    .nav__link:hover {
+    .nav__link:hover{
       color: var(--white-color);
     }
-    .nav__dark {
+    .nav__dark{
       position: initial;
     }
-    .nav__menu {
+    .nav__menu{
       display: flex;
       column-gap: 1rem;
     }
-    .nav__list {
+    .nav__list{
       flex-direction: row;
       column-gap: 4rem;
     }
-    .nav__alternancia, .nav__close {
+    .nav__alternancia, .nav__close{
       display: none;
     }
-    .change-theme-name {
+    .change-theme-name{
       display: none;
     }
-    .change-theme {
+    .change-theme{
       color: var(--white-color);
     }
-    .active-link::before {
+    .active-link::before{
       background-color: var(--white-color);
     }
-    .scroll-header .nav__link {
+    .scroll-header .nav__link{
       color: var(--text-color);
     }
-    .scroll-header .active-link {
+    .scroll-header .active-link{
       color: var(--title-color);
     }
-    .scroll-header .active-link::before {
+    .scroll-header .active-link::before{
       background-color: var(--title-color);
     }
-    .scroll-header .change-theme {
+    .scroll-header .change-theme{
       color: var(--text-color);
     }
-    .section {
+    .section{
       padding: 7rem 0 2rem;
     }
-    .home__container {
+    .home__container{
       height: 100vh;
       grid-template-rows: 1.8fr .5fr;
     }
-    .home__data {
+    .home__data{
       align-self: flex-end;
     }
-    .home__social {
+    .home__social{
       flex-direction: row;
       align-self: flex-end;
       margin-bottom: 3rem;
       column-gap: 2.5rem;
     }
-    .home__info {
+    .home__info{
       bottom: 3rem;
     }
-    .about__container {
+    .sobre__container{
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
     }
-    .about__data, .about__title {
+    .sobre__data, .sobre__title{
       text-align: initial;
     }
-    .about__title {
+    .sobre__title{
       margin-bottom: var(--mb-1-5);
     }
-    .about__description {
+    .sobre__description{
       margin-bottom: var(--mb-2);
     }
-    .descobrir__container {
+    .descobrir__container{
       width: 610px;
       margin-left: auto;
       margin-right: auto;
     }
     .descobrir__container,
-    .place__container {
+    .lugar__container{
       padding-top: 2rem;
     }
-    .experience__overlay:nth-child(1) {
+    .experiencia__overlay:nth-child(1){
       width: 363px;
       margin-right: 4rem;
     }
-    .experience__overlay:nth-child(2) {
+    .experiencia__overlay:nth-child(2){
       width: 160px;
     }
-    .subscribe__bg {
+    .inscrever__bg{
       background: none;
       padding: 0;
     }
-    .subscribe__container {
+    .inscrever__container{
       background-color: var(--first-color-second);
       padding: 3.5rem 0;
     }
-    .subscribe__input {
+    .inscrever__input{
       padding: 0 .5rem;
     }
-    .footer__rights {
+    .footer__rights{
       flex-direction: row;
       justify-content: space-between;
     }
-  }
+}
   
-  /* For large devices */
-  @media screen and (min-width: 1024px) {
-    .container {
+  @media screen and (min-width: 1024px){
+    .container{
       margin-left: auto;
       margin-right: auto;
     }
-    .home__container {
+    .home__container{
       grid-template-rows: 2fr .5fr;
     }
-    .home__info {
+    .home__info{
       width: 328px;
       grid-template-columns: 1fr 2fr;
       column-gap: 2rem;
     }
-    .home__info-title {
+    .home__info-title{
       font-size: var(--normal-font-size);
     }
-    .home__info-img {
+    .home__info-img{
       width: 240px;
     }
-    .about__img-one {
+    .voltar__img-one{
       width: 230px;
     }
-    .about__img-two {
+    .voltar__img-two{
       width: 290px;
     }
-    .descobrir__card {
+    .descobrir__card{
       width: 237px;
     }
-    .descobrir__container {
+    .descobrir__container{
       width: 700px;
     }
-    .descobrir__data {
+    .descobrir__data{
       left: 1.5rem;
       bottom: 2rem;
     }
-    .descobrir__title {
+    .descobrir__title{
       font-size: var(--h2-font-size);
     }
-    .experience__content {
+    .experiencia__content{
       margin: var(--mb-1) 0;
       column-gap: 3.5rem;
     }
-    .experience__overlay:nth-child(1) {
+    .experiencia__overlay:nth-child(1){
       width: 463px;
       margin-right: 7rem;
     }
-    .experience__overlay:nth-child(2) {
+    .experiencia__overlay:nth-child(2){
       width: 220px;
       top: 3rem;
     }
-    .video__container {
+    .video__container{
       grid-template-columns: .7fr;
     }
-    .video__description {
+    .video__description{
       padding: 0 8rem;
     }
-    .place__container {
+    .lugar__container{
       gap: 3rem 2rem;
     }
-    .place__card, .place__img {
+    .lugar__card, .lugar__img{
       height: 263px;
     }
-    .footer__content {
+    .footer__content{
       justify-items: center;
     }
-  }
+}
   
-  @media screen and (min-width: 1200px) {
-    .container {
+  @media screen and (min-width: 1200px){
+    .container{
       max-width: 1024px;
     }
-  }
+}
   
-  /* For tall screens on mobiles y desktop*/
-  @media screen and (min-height: 721px) {
-    body {
+  @media screen and (min-height: 721px){
+    body{
       margin: 0;
     }
-    .home__container, .home__img {
+    .home__container, .home__img{
       height: 640px;
     }
-  }
+}
